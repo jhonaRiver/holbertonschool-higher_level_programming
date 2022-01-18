@@ -10,7 +10,8 @@ Prints the square with #
 
 class Square:
     """
-    Defines a square with initialized size or 0 default, can compute area and print the square using #
+    Defines a square with initialized size or 0 default, can compute area and
+    print the square using #
     """
     def __init__(self, size=0):
         self.size = size
