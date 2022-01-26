@@ -4,8 +4,8 @@
 
 def matrix_divided(matrix, div):
     """divides all elements of a matrix"""
-    if (matrix == [] or matrix == [[]] or type(matrix) is not list
-       or not all(type(row) is list for row in matrix)):
+    if (matrix == [] or matrix == [[]] or type(matrix) is not list or
+       not all(type(row) is list for row in matrix)):
         raise TypeError("matrix must be a matrix (list of lists) "
                         "of integers/floats")
     for row in matrix:
