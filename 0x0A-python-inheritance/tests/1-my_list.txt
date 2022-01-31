@@ -1,0 +1,99 @@
+==========================
+1-my_list
+==========================
+
+"""
+test
+"""
+
+>>> MyList = __import__('1-my_list').MyList
+
+test 1:
+
+>>> my_list = MyList()
+>>> my_list.append(9)
+>>> my_list.append(5)
+>>> my_list.append(8)
+>>> my_list.append(1)
+>>> my_list.print_sorted()
+[1, 5, 8, 9]
+
+test 2:
+
+>>> my_list = MyList()
+>>> my_list.append(-5)
+>>> my_list.append(-8)
+>>> my_list.append(0)
+>>> my_list.append(8)
+>>> my_list.print_sorted()
+[-8, -5, 0, 8]
+
+test 3:
+
+>>> my_list = MyList()
+>>> my_list.append(8)
+>>> my_list.append(8)
+>>> my_list.print_sorted()
+[8, 8]
+
+test 4:
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(8)
+>>> my_list.append(9)
+>>> my_list.append(2)
+>>> print(my_list)
+[1, 8, 9, 2]
+
+test 5:
+
+>>> my_list = MyList()
+>>> my_list.append(None)
+
+test 6:
+
+>>> m = __import__("1-my_list").__doc__
+>>> len(m) > 1
+True
+
+test 7:
+
+>>> l = MyList()
+>>> l.print_sorted()
+[]
+
+test 8:
+
+>>> l.print_sorted(1)
+Traceback (most recent call last):
+TypeError: print_sorted() takes 1 positional argument but 2 were given
+
+test 9:
+
+>>> my_list = MyList()
+>>> my_list.append(-1)
+>>> my_list.append(-8)
+>>> my_list.append(-9)
+>>> my_list.append(2)
+>>> print(my_list)
+[-1, -8, -9, 2]
+
+test 10:
+
+>>> my_list = MyList()
+>>> my_list.append(-1)
+>>> my_list.append(float('inf'))
+>>> print(my_list)
+[-1, inf]
+
+test 11:
+
+>>> issubclass(MyList, list)
+True
+
+test 12:
+
+>>> my_list = __import__("1-my_list").MyList.print_sorted.__doc__
+>>> len(my_list) > 1
+True
