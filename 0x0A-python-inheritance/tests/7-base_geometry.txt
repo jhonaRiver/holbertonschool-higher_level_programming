@@ -1,0 +1,75 @@
+se_geometry
+==========================
+
+"""
+test
+"""
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+test 1:
+
+>>> bg = __import__('7-base_geometry').__doc__
+>>> print(len(bg) > 0)
+True
+
+test 2:
+
+>>> bg = __import__('7-base_geometry').BaseGeometry.area.__doc__
+>>> print(len(bg) > 0)
+True
+
+test 3:
+
+>>> bg = __import__('7-base_geometry').BaseGeometry.integer_validator.__doc__
+>>> print(len(bg) > 0)
+True
+
+test 4:
+
+>>> bg = BaseGeometry()
+
+>>> bg.integer_validator("positive", 3)
+
+test 5:
+
+>>> bg.integer_validator("negative", -3)
+Traceback (most recent call last):
+ValueError: negative must be greater than 0
+
+test 6:
+
+>>> bg.integer_validator("char", 'a')
+Traceback (most recent call last):
+TypeError: char must be an integer
+
+test 7:
+
+>>> bg.integer_validator("inf", float('inf'))
+Traceback (most recent call last):
+TypeError: inf must be an integer
+
+test 8:
+
+>>> bg.integer_validator("none", None)
+Traceback (most recent call last):
+TypeError: none must be an integer
+
+test 9:
+
+>>> bg.integer_validator("none2", )
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+test 10:
+
+>>> bg.integer_validator(, 12)
+Traceback (most recent call last):
+SyntaxError: invalid syntax
+
+test 11:
+
+>>> bg.integer_validator()
+Traceback (most recent call last):
+TypeError: integer_validator() missing 2 required positional arguments: 'name'
+and 'value'
