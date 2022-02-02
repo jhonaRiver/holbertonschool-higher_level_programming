@@ -13,15 +13,11 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
-        if type(attrs) is list:
-            c = {}
-            for a in attrs:
-                if a in self.__dict__:
-                    c[a] = self.__dict__[a]
-            return lib
+    def to_json(self, attrs=None):
+        if (type(attrs) == list and all(type(ele) == str for ele in attrs)):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
 
     def reload_from_json(self, json):
-        for a, b in json.items():
-            self.__dict__[a] = b
+        for k, v in json.items():
+            setattr(slef, k, v)
