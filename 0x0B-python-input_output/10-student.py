@@ -25,4 +25,3 @@ class Student:
             return new_dict
         else:
             return self.__dict__
-
