@@ -21,8 +21,8 @@ class Square(Rectangle):
         """
         Prints Square info
         """
-        return '[Square] ({:d}) {:d}/{:d} - {:d}'
-        .format(self.id, self.x, self.y, self.width)
+        return '[Square] ({:d}) {:d}/{:d} - {:d}'\
+               .format(self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
