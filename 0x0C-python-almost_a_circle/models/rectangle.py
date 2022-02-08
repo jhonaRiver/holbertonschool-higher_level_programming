@@ -118,7 +118,7 @@ class Rectangle(Base):
         Prints Rectangle info
         """
         return '[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}'
-        .format(self.id,self.x, self.y, self.width, self.height)
+        .format(self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
         """
@@ -136,7 +136,7 @@ class Rectangle(Base):
             for k, v in kwargs.items():
                 if k in modif_attrs:
                     setattr(self, k, v)
-    
+
     def to_dictionary(self):
         """
         Dictionary representation of Rectangle
