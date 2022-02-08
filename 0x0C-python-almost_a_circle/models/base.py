@@ -9,7 +9,8 @@ import json
 
 class Base:
     """
-    Defines class Base to manage the id attribute of all classes that extend from it and avoid duplicates
+    Defines class Base to manage the id attribute of all classes that extend
+    from it and avoid duplicates
     """
 
     __nb_objects = 0
@@ -53,7 +54,7 @@ class Base:
         if cls.__name__ == 'Square':
             dummy = cls(3)
         if cls.__name__ == 'Rectangle':
-            dummy = cls(3,3)
+            dummy = cls(3, 3)
         dummy.update(**dictionary)
         return dummy
 
