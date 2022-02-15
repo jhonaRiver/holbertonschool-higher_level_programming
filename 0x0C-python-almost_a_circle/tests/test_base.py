@@ -20,8 +20,8 @@ class TestBase(unittest.TestCase):
         """
         syntax = pep8.StyleGuide(quit=True)
         check = syntax.check_files(['models/base.py'])
-        self.assertEqual(check.total_errors, 0, "Found code style errors (and
-        warnings).")
+        self.assertEqual(check.total_errors, 0, "Found code style errors (and\
+                         warnings).")
 
     def test_id_as_positive(self):
         """
@@ -95,8 +95,8 @@ class TestBase(unittest.TestCase):
         json_data = Base.to_json_string([rect_data])
         self.assertTrue(isinstance(rect_data, dict))
         self.assertTrue(isinstance(json_data, str))
-        self.assertCountEqual(json_data, '{["id": 31, "x": 14, "y": 11,
-        "width": 3, "height": 3]}')
+        self.assertCountEqual(json_data, '{["id": 31, "x": 14, "y": 11,\
+                              "width": 3, "height": 3]}')
 
     def test_wrong_to_json_string(self):
         """
