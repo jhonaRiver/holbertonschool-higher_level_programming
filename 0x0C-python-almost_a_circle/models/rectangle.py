@@ -117,8 +117,8 @@ class Rectangle(Base):
         """
         Prints Rectangle info
         """
-        return '[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}'
-        .format(self.id, self.x, self.y, self.width, self.height)
+        return '[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}'\
+            .format(self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
         """
