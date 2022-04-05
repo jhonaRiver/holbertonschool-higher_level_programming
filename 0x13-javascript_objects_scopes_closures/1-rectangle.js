@@ -3,7 +3,7 @@
 class Rectangle {
   // constructor must take 2 arguments w and h
   constructor (w, h) {
-    //initialization of width and height
+    // initialization of width and height
     this.width = w;
     this.height = h;
   }
