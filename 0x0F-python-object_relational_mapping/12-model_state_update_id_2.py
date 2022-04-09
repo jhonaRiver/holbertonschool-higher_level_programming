@@ -4,10 +4,11 @@ script that changes the name of a State object from the database hbtn_0e_6_usa
 '''
 
 
+import MySQLdb
 from sys import argv
 from model_state import Base, State
-from sqlalchemy import create_engine, orm
-import sqlalchemy
+from sqlalchemy import create_engine, text
+from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
@@ -15,10 +16,14 @@ if __name__ == "__main__":
 
     Base.metadata.create_all(engine)
 
-    session = orm.sessionmaker(bind=engine)()
-
-    modify = session.query(State).get(2)
-    modify.name = 'New Mexico'
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    state = session.query(State).from_statement(text(
+        "SELECT * "
+        "FROM states "
+        "WHERE id=2"
+        ))
+    state.name = 'New Mexico'
     session.commit()
 
     session.close()
