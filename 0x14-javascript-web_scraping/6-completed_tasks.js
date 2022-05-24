@@ -1,14 +1,18 @@
 #!/usr/bin/node
-// script that computes the number of tasks completed by user id
+// Script that computes number of task completed by user
+
 const request = require('request');
 const urlAPI = process.argv[2];
-request(urlAPI, function (error, res, content) => {
+
+request(urlAPI, (error, res, content) => {
   if (error) {
     console.error(error);
     return;
   }
+
   const taskList = JSON.parse(content);
   const completedTasks = {};
+
   for (const task of taskList) {
     if (task.completed) {
       const userID = task.userId;
