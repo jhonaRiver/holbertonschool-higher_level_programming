@@ -20,3 +20,5 @@ In this repository you will find the projects related to high-level programming 
 * [0x0E. SQL - More queries](https://github.com/jhonaRiver/holbertonschool-higher_level_programming/tree/main/0x0E-SQL_more_queries)
 * [0x12. JavaScript - Warm up](https://github.com/jhonaRiver/holbertonschool-higher_level_programming/tree/main/0x12-javascript-warm_up)
 * [0x13. JavaScript - Objects, Scopes and Closures](https://github.com/jhonaRiver/holbertonschool-higher_level_programming/tree/main/0x13-javascript_objects_scopes_closures)
+* [0x14. JavaScript - Web Scraping](https://github.com/jhonaRiver/holbertonschool-higher_level_programming/tree/main/0x14-javascript-web_scraping)
+* [0x15. JavaScript - Web jQuery](https://github.com/jhonaRiver/holbertonschool-higher_level_programming/tree/main/0x15-javascript-web_jquery)
