@@ -1,9 +1,10 @@
-<h1 align="center">Holberton School Higher Level Programming</h1>
-In this repository you will find the projects related to high-level programming that I had to do in Holberton.
+# Holberton School Higher Level Programming
+
+> In computer science, a high-level programming language is a programming language with strong abstraction from the details of the computer. In contrast to low-level programming languages, it may use natural language elements, be easier to use, or may automate (or even hide entirely) significant areas of computing systems (e.g. memory management), making the process of developing a program simpler and more understandable than when using a lower-level language
 
 ## Projects
 
-* [0x00. Python - Hello, World](https://github.com/jhonaRiver/holbertonschool-higher_level_programming/tree/main/0x00-python-hello_world)
+* [Python - Hello, World](https://github.com/jhonaRiver/holbertonschool-higher_level_programming/tree/main/python-hello_world)
 * [0x01. Python - if/else, loops, functions](https://github.com/jhonaRiver/holbertonschool-higher_level_programming/tree/main/0x01-python-if_else_loops_functions)
 * [0x02. Python - import & modules](https://github.com/jhonaRiver/holbertonschool-higher_level_programming/tree/main/0x02-python-import_modules)
 * [0x03. Python - Data Structures: Lists, Tuples](https://github.com/jhonaRiver/holbertonschool-higher_level_programming/tree/main/0x03-python-data_structures)
